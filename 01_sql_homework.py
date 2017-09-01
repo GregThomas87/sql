@@ -4,14 +4,14 @@
 import sqlite3
 
 # create database connection
-conn = sqlite3.connect("new.db")
+conn = sqlite3.connect("cars.db")
 
 # create a cursor
 cursor = conn.cursor()
 
 # execute SQL query to create my table
-cursor.execute("""CREATE TABLE population
-                (City TEXT, State TEXT, population INT)
+cursor.execute("""CREATE TABLE inventory
+                (Make TEXT, Model TEXT, Quantity INT)
                 """)
                 
 # close database connection
